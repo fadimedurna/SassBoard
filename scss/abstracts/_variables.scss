@@ -5,11 +5,11 @@ $e-colors: (
   "primary": (
     name: primary,
     variations: (
-      main: #34426f,
-      100: #a9b0c2,
-      200: #a0a8bc,
-      300: #969fb5,
-      400: #2f3c65,
+      main: #48346f,
+      100: #b1a9c2,
+      200: #aca0bc,
+      300: #a096b5,
+      400: #4b2f65,
       500: #181f34,
       600: #161c2f,
     ),
@@ -17,13 +17,13 @@ $e-colors: (
   "secondary": (
     name: secondary,
     variations: (
-      main: #7d83ff,
-      100: #bdbfff,
-      200: #c3c5ff,
-      300: #c8caff,
-      400: #414384,
-      500: #3b3d78,
-      600: #36376d,
+      main: #b77dff,
+      100: #debdff,
+      200: #e3c3ff,
+      300: #dbc8ff,
+      400: #694184,
+      500: #5a3b78,
+      600: #51366d,
     ),
   ),
   "orange": (
@@ -183,4 +183,45 @@ $e-colors: (
   --font-weight-regular: 400;
   --font-weight-medium: 500;
   --font-weight-bold: 700;
+
+  /* ************** SPACING ************** */
+  --spacing-0: 0;
+  --spacing-xs: 0.8rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.2rem;
+  --spacing-lg: 1.4rem;
+  --spacing-xl: 1.6rem;
+  --spacing-18: 1.8rem;
+  --spacing-20: 2rem;
+
+  /* ************** LAYOUT ************** */
+  --container-default: 90%;
+  --container-sm: 87.5rem; //875px
+  --container-md: 121.5rem;
+  --container-lg: 131.5rem;
+  --container-xl: 156rem;
 }
+
+/* ************** RESPONSIVE LAYOUT ************** */
+$breakpoint-sm: 553px;
+$breakpoint-md: 901px;
+$breakpoint-lg: 1281px;
+$breakpoint-xl: 1440px;
+
+// Breakpoint map
+$breakpoints-up: (
+  sm: $breakpoint-sm,
+  md: $breakpoint-md,
+  lg: $breakpoint-lg,
+  xl: $breakpoint-xl,
+);
+
+$default-gutter: 1.5rem;
+$total-cols: 12;
+
+$containers: (
+  sm: var(--container-sm),
+  md: var(--container-md),
+  lg: var(--container-lg),
+  xl: var(--container-xl),
+);
